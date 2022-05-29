@@ -1,0 +1,165 @@
+%-------------------------
+% Resume in Latex
+% Author : Prathamesh Mali
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,12pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+% \newcommand{\resumeSubHeadingListStart}{\begin{}}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  % \textbf{\href{http://sourabhbajaj.com/}{\Large Prathamesh Mali}} &   \href{mailto:mali.prathamesh82@gmail.com} \faEnvelope\space
+  % {mali.prathamesh82@gmail.com}\\
+  \textbf {\Large Prathamesh Mali} &   \href{mailto:mali.prathamesh82@gmail.com} {\faEnvelope\space mali.prathamesh82@gmail.com}\\
+  % \href{https://prathamesh-mali.netlify.app/} {\faGlobe\space prathamesh-mali.netlify.app/} & \faPhone\space +91 9892634021 \\
+  \textbf{Software Engineer (1+ years)} & \href{https://prathamesh-mali.netlify.app/} {\faGlobe\space prathamesh-mali.netlify.app/} \\
+  Mumbai, IN\textbf{} & \href{https://www.linkedin.com/in/prathameshmali/} {\faLinkedin\space linkedin.com/in/prathameshmali/}  \\
+  \textbf{}& \href {https://github.com/Pratham82} {\faGithub\space github.com/Pratham82}  \\
+\end{tabular*}
+
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf {Experience}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Mosaic Wellness}{Mumbai}
+{SDE - 1}{May 2022 - Present}
+
+
+\resumeSubheading
+{Edstem Technologies}{Kerala (Remote)}
+{Software Developer}{Jul 2021 - Apr 2022}
+\resumeItemListStart
+\resumeItem{LeadIAS}
+{Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
+\resumeItem{Woodside}
+{Frontend web app: Created reusable custom components, with styled-components, added unit testing.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Edulab}{Mumbai}
+{Jr. Software Engineer}{Feb 2021 - Jun 2021}
+\resumeItemListStart
+\resumeItem{Learning Management System}
+{Worked on Learning Management System created for SDBI, work involved creating a module from designing and building the frontend to creating backend endpoints.}
+
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+\resumeSubItem{SNKR Town (E-commerce App)}
+{SNKR(Sneaker) Town is home to all sneakerheads and sneaker enthusiasts. It has a curated range of sneakers from the top brands in the industry. Check out the best sneakers in town}
+\resumeSubItem{Code Tube (Video Library App)}
+{Code tube a video library application curated with coding videos. You can watch a detailed videos on programming and go in depth of specific category}
+\resumeSubItem{PopQuiz (Quiz App)}
+{Pop quiz is the quiz app, which has pop culture topics. Implemented timers between questions and added scoring system. }
+\resumeSubItem{Launchpad}
+{Launchpad is a platform for sharing the new companies, services, products, where users can share their feedback and experiences with the respective companies}
+% {\href {https://github.com/Pratham8223} {\faLink\space live} \href {https://github.com/Pratham82} {\faGithub\space code} \\}
+
+%     \resumeSubItem{Mac Setup}
+%       {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+\resumeSubHeadingListEnd
+%
+
+%--------PROGRAMMING SKILLS------------
+\section{\textbf{Programming Skills}}
+\resumeSubHeadingListStart
+\item{
+            \textbf{Languages}{: Javascript, Typescript, HTML, CSS}
+            \hfill
+            \textbf{Frameworks}{: React, Next.js, Node.js }
+      }
+\item{
+            \textbf{Other}{: Git, Github, Docker, Github Acitons}
+            \hfill
+            \textbf{OS}{: Linux, MacOS, Windows}
+      }
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{\textbf{Education}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Mumbai University}{Mumbai, MH}
+{Master of Science in Computer Science}{June. 2019 -- Aug. 2021}
+\resumeSubheading
+{Mumbai University}{Mumbai, MH}
+{Bachelor of Science in Computer Science}{-- July. 2019}
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
