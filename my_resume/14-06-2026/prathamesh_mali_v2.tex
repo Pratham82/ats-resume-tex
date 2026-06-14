@@ -1,0 +1,314 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+%---- Required Packages and Functions ----
+
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome}
+\usepackage[most]{tcolorbox}
+
+
+% Set the margins
+\geometry{left=0.85cm, top=0.8cm, right=0.85cm, bottom=0.8cm}
+\pagestyle{empty}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \hspace{-3mm}{#1}:\hspace{1mm} & \hspace*{0pt}\hfill{\footnotesize{ #3}} \vspace{-0.5mm}\\ \hspace{-2.9mm}#2
+    \end{tabular*}
+    \vspace{0mm}
+}
+
+\newcommand{\resumeExp}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{\textcolor{blue}{#1}} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4.3mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-6.1mm}
+}
+
+\newcommand{\education}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4mm} \small\textbf{#1} & {\footnotesize{#3}}\vspace{-1.2mm}\\
+        \hspace{-4mm} \footnotesize{\text{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-5mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} | \textcolor{blue}{\footnotesize{#2}} | \textcolor{blue}{\footnotesize{#3}} | \emph{\footnotesize{#4}} &  \\
+    \end{tabular*}
+    \vspace{-8.1mm}
+}
+
+\newcommand{\resumeRes}[2]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.4mm} \small\textbf{#1} & {\footnotesize{#2}}
+    \end{tabular*}
+    \vspace{-7.1mm}
+}
+
+\newcommand{\resumeEdu}[4]{
+\vspace{0mm}\item[]
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \hspace{-4.3mm} \small\textbf{#1} & \footnotesize{#3}\vspace{-1mm} \\
+        \hspace{-4.3mm} \footnotesize{#2} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-3.2mm}
+}
+
+\newcommand{\resumeAchieve}[3]
+{
+\hspace{-3.1mm}\textbf{ #1} & {#2} & \hspace{3mm}\footnotesize{#3}
+\vspace{0mm}\\
+}
+
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm,itemsep=-2.5mm]}
+
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-1.5mm}}
+
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+
+\newcommand{\name}{Prathamesh Mali} % Your Name
+\newcommand{\designation}{Senior Frontend Engineer} % Your Designation
+\newcommand{\course}{MSc Computer Science} % Your Course
+\newcommand{\phone}{9892634021} % Your Phone Number
+\newcommand{\emaila}{mali.prathamesh82@gmail.com} %Email 1
+\newcommand{\github}{pratham82} %Github
+\newcommand{\website}{https://pratham82.vercel.app/home} %Website
+\newcommand{\linkedin}{prathameshmali} %linkedin
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+
+
+%----------HEADING-----------------
+\begin{center}
+    \LARGE{\textbf{\name}}
+\end{center}
+\begin{center}
+    \textbf{\designation  (5+ Years)}
+\end{center}
+\vspace{-4mm}
+\begin{center}
+\color{blue}
+\small{\href{https://pratham82.in}{\faGlobe \hspace{0.2mm} portfolio} |
+\small{\href{https://github.com/\github}{\faGithub \hspace{0.2mm} pratham82} |
+\href{https://www.linkedin.com/in/\linkedin/}{\faLinkedinSquare \hspace{0.2mm} prathameshmali} |
+\href{mailto:\emaila}{\faSend \hspace{0.2mm} \emaila} |
+\faPhone \hspace{0.2mm} +91\phone }
+\end{center}
+\vspace{-3mm}
+
+
+%-----------SUMMARY-----------------
+\section{Summary}
+\vspace{1mm}
+\small{Senior Frontend Engineer with 5+ years of experience building large-scale web and mobile applications using React.js, Next.js, TypeScript, and React Native. Experienced in frontend architecture, design systems, performance optimization, and cross-functional collaboration. Currently leading checkout modernization initiatives at lululemon while leveraging AI-native engineering workflows to improve developer productivity.}
+\vspace{-2mm}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+
+\resumeExp
+{\href{https://www.publicissapient.com/}{Publicis Sapient}}
+{Senior Experience Engineer}
+{\textbf{July 2025 – Present}}
+{\textbf{Mumbai, India (Hybrid)}}
+\resumeItemListStart
+\vspace{1mm}
+
+\item[$\cdot$] \textbf{lululemon} (Current): Lead a pod within lululemon's ecommerce checkout team — driving technical discussions, code reviews, and blocker resolution to ensure smooth delivery.
+\item[$\cdot$] Own the promotions and discounts domain within checkout, building and maintaining core customer-facing experiences end-to-end.
+\item[$\cdot$] Driving checkout modernization for \href{https://shop.lululemon.com/}{\textcolor{blue}{lululemon.com}}, migrating a legacy JavaScript codebase to a modern Next.js and TypeScript architecture.
+\item[$\cdot$] Work within a micro-frontend architecture leveraging GraphQL, Apollo Client/Server, and Zustand for scalable frontend development.
+\item[$\cdot$] Leverage GitHub Copilot and AI-native engineering practices — including agentic workflows, reusable skills, orchestrators, and context engineering — to accelerate productivity and improve engineering efficiency.
+
+\item[$\cdot$] \textbf{ADCB Banking}: Contributed to cross-platform digital banking solutions for web and mobile using React Native (Expo), XState, and Tamagui.
+\item[$\cdot$] Built a phonebook integration component to streamline new user onboarding, and designed a generic approval workflow for approve/decline actions across multiple banking modules.
+\item[$\cdot$] Primarily contributed to the Mandates module, enhancing functionality and overall user experience.
+
+\item[$\cdot$] \textbf{Tools/Stack}: Next.js, TypeScript, GraphQL, Apollo Client/Server, Zustand, React Native Expo, XState, Tamagui
+\resumeItemListEnd
+
+\resumeExp
+{\href{https://www.blitzelectric.id/}{Blitz Electric}}
+{Senior Software Engineer (Frontend)}
+{\textbf{June 2024 – June 2025}}
+{\textbf{Remote, Indonesia}}
+\resumeItemListStart
+\vspace{1mm}
+
+\item[$\cdot$] \textbf{Mobile Seller Platform:} Launched offline sales system with QRIS/cash transactions, geo-tagged returns, and photo verification — driving \textbf{30\%} higher daily sales and \textbf{80\%} fewer deposit disputes across \textbf{100+} stores.
+
+\item[$\cdot$] \textbf{Shipping Fee Engine:} Replaced manual pricing with a real-time shipping calculator based on distance, weight, and service type — improving order volume by \textbf{20\%} and streamlining partner onboarding.
+
+\item[$\cdot$] \textbf{Design System:} Created a reusable React component library (npm) to standardize UI and speed up development across multiple teams.
+
+\item[$\cdot$] \textbf{Order Tracking System:} Designed and built an order tracking system (Google Maps API) for partners like Blibli and Lazada, fetching updates periodically to provide delivery status and reducing support queries.
+
+\item[$\cdot$] \textbf{Stack:} React.js, TypeScript, Clean Architecture, REST APIs, MUI, Tailwind CSS
+
+\resumeItemListEnd
+
+
+\resumeExp
+{\href{https://www.mosaicwellness.in/}{Mosaic Wellness}}
+{SDE 1}
+{\textbf{June 2022 – April 2024}}
+{\textbf{Onsite, Mumbai}}
+\resumeItemListStart
+\vspace{1mm}
+\item[$\cdot$] Led development of a consultation homepage experience, later migrated from WebView to React Native, resulting in a \textbf{40\% increase} in appointment bookings and a \textbf{10\% reduction} in booking funnel drop-offs.
+\item[$\cdot$] Built doctor consultation and appointment scheduling systems including an Instant Appointment System (Web) and a chat-based booking flow in the mobile app (React Native). Revamped the Track Order page, contributing to a \textbf{5\% decrease} in customer support queries.
+\item[$\cdot$] \textbf{Tech stack}: React.js, Next.js, React Native, TypeScript, Redux, Styled Components, Storybook, Jest, REST APIs, Node.js
+\item[$\cdot$] \textbf{Products}: {\href{https://manmatters.com/}{\textcolor{blue}{manmatters.com}}}, {\href{https://bebodywise.com/}{\textcolor{blue}{bebodywise.com}}}, {\href{https://ourlittlejoys.com/}{\textcolor{blue}{ourlittlejoys.com}}}
+\resumeItemListEnd
+
+\vspace{1mm}
+\resumeExp
+{\href{https://www.edstem.com/}{Edstem Technologies}}
+{Software Developer}
+{\textbf{July 2021 – April 2022} (10 Months)}
+{\textbf{Remote (Kerala)}}
+\vspace{1mm}
+\resumeItemListStart
+\item[$\cdot$] \textbf{Lead IAS}: Worked on student-facing quiz module using Angular Ionic, and contributed to the admin dashboard for creating and managing quizzes. {\href{https://leadiasacademy.com/}{\textcolor{blue}{leadiasacademy.com}}}
+\item[$\cdot$] \textbf{Woodside}: Built a compliance dashboard in React for Woodside employees; implemented unit testing with Jest.
+\item[$\cdot$] \textbf{Tech stack}: Angular Ionic, React.js, Redux, Styled Components, Material UI, Jest, REST APIs, Node.js
+\resumeItemListEnd
+
+\vspace{1mm}
+\resumeExp
+{\href{https://www.edulab.in/}{Edulab}}
+{Software Engineer}
+{\textbf{February 2021 – June 2021} (5 Months)}
+{\textbf{Onsite, Mumbai, India}}
+\vspace{0.6mm}
+\resumeItemListStart
+\item[$\cdot$] \textbf{SDBMI LMS}: Built end-to-end features for an LMS used by SDBI students using the MEAN stack, including attendance and exam management modules.
+\item[$\cdot$] \textbf{Certificate Generation Tool}: Built a Node.js tool with pdfmake for automated certificate generation.
+\resumeItemListEnd
+
+
+
+
+\vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% All Projects %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-7.5mm}
+\section{Projects}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Project %%%%%%%%%%%%%%%%%%%%%%%%%%
+\resumeSubHeadingListStart
+\vspace{1mm}
+
+\resumeProject
+{Portfolio}
+{\href{https://pratham82.vercel.app/home}{Website}}
+{\href{https://github.com/Pratham82/portfolio-v5}{Code}}
+{Next.js, TypeScript, Tailwind, GraphQL, Sanity.io, MDX}
+\resumeItemListStart
+\vspace{2mm}
+\item[$\cdot$] Built a personal portfolio and CMS-driven blogging platform using Next.js, GraphQL, Sanity.io, and MDX — enabling content publishing, project showcasing, and SEO-optimized article delivery.
+\resumeItemListEnd
+\vspace{1mm}
+
+\resumeSubHeadingListEnd
+\vspace{-3.5mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Project %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\vspace{-1.2mm}
+\section{Technical Skills}
+
+\small{\begin{tabular*}{\textwidth}[t]{p{0.18\textwidth} p{0.78\textwidth}}
+\textbf{Frontend} & React.js, Next.js, TypeScript, React Native, Redux, Zustand, Tailwind CSS, Storybook \\
+\textbf{Backend \& APIs} & Node.js, Express.js, GraphQL, Apollo Client/Server, REST APIs \\
+\textbf{Testing} & Jest, React Testing Library \\
+\textbf{DevOps \& Tools} & Docker, GitHub Actions, Jenkins, Vercel, Netlify, Git, Jira, Confluence \\
+\textbf{AI Tools} & GitHub Copilot, Claude Code, Cursor, Ollama, MCP Integrations \\
+\end{tabular*}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%% Education %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\education
+{Master of Computer Science (Grade: 9.29)}
+{Mumbai University}
+{\textbf{2019 – 2021}}
+{}
+
+\vspace{4mm}
+
+\education
+{Bachelor of Computer Science}
+{Mumbai University}
+{\textbf{2016 – 2019}}
+{}
+
+
+\end{document}
