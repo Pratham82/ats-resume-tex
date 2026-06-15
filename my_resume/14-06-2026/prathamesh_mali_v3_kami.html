@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prathamesh Mali · Resume</title>
+<meta name="author" content="Prathamesh Mali">
+<meta name="description" content="Senior Frontend Engineer with 5+ years building large-scale web and mobile applications in React.js, Next.js, TypeScript, and React Native.">
+<meta name="keywords" content="frontend engineer, React, Next.js, TypeScript, React Native, Mumbai">
+<meta name="generator" content="Kami">
+<style>
+  @page {
+    size: A4;
+    margin: 10mm 14mm 10mm 14mm;
+    background: #f5f4ed;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --parchment:   #f5f4ed;
+    --ivory:       #faf9f5;
+    --border:      #e8e6dc;
+    --border-soft: #e5e3d8;
+    --near-black:  #141413;
+    --dark-warm:   #3d3d3a;
+    --olive:       #504e49;
+    --stone:       #6b6a64;
+    --brand:       #1B365D;
+    --brand-tint:  #EEF2F7;
+    --serif: Charter, Georgia, Palatino, "Times New Roman", serif;
+    --mono:  "JetBrains Mono", "SF Mono", "Fira Code", Consolas, Monaco, monospace;
+  }
+
+  html, body { background: var(--parchment); }
+
+  @media screen {
+    body { max-width: 210mm; margin: 0 auto; padding: 10mm 14mm; }
+  }
+
+  body {
+    color: var(--near-black);
+    font-family: var(--serif);
+    font-size: 9.6pt;
+    line-height: 1.44;
+  }
+
+  a { color: var(--brand); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ── HEADER ── */
+  .header {
+    text-align: center;
+    margin-bottom: 3mm;
+  }
+  .header-name {
+    font-size: 24pt;
+    font-weight: 600;
+    letter-spacing: -0.3pt;
+    color: var(--near-black);
+    line-height: 1.1;
+  }
+  .header-sub {
+    font-size: 9.6pt;
+    color: var(--olive);
+    margin-top: 1mm;
+  }
+  .header-sub strong { color: var(--near-black); }
+  .header-links {
+    margin-top: 1.5mm;
+    font-size: 9pt;
+    color: var(--stone);
+  }
+  .header-links a { color: var(--brand); }
+  .header-links .sep { margin: 0 0.5em; color: var(--border); }
+
+  /* ── SECTION ── */
+  .section { margin-top: 4mm; }
+  .section-title {
+    font-family: var(--serif);
+    font-size: 10.5pt;
+    font-weight: 600;
+    letter-spacing: 0.6pt;
+    text-transform: uppercase;
+    color: var(--near-black);
+    border-left: 2.5pt solid var(--brand);
+    padding-left: 6pt;
+    margin-bottom: 2mm;
+    line-height: 1.2;
+  }
+  .section-rule {
+    border: none;
+    border-top: 0.5pt solid var(--border);
+    margin: 0.8mm 0 2mm 0;
+  }
+
+  /* ── SUMMARY ── */
+  .summary-body {
+    font-size: 9.6pt;
+    color: var(--near-black);
+    line-height: 1.5;
+  }
+  .summary-competencies {
+    margin-top: 2mm;
+    font-size: 9pt;
+    color: var(--stone);
+    line-height: 1.45;
+    letter-spacing: 0.1pt;
+  }
+  .summary-competencies .dot { color: var(--border); margin: 0 0.5em; }
+
+  /* ── EXPERIENCE ── */
+  .exp-entry { margin-bottom: 2.5mm; break-inside: avoid; }
+  .exp-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 4mm;
+    margin-bottom: 0.5mm;
+  }
+  .exp-left {
+    display: flex;
+    align-items: baseline;
+    gap: 1.5mm;
+    flex-wrap: wrap;
+  }
+  .exp-company {
+    font-size: 10pt;
+    font-weight: 600;
+    color: var(--brand);
+  }
+  .exp-sep { color: var(--border-soft); font-size: 9pt; }
+  .exp-role {
+    font-size: 9.6pt;
+    font-weight: 600;
+    color: var(--near-black);
+  }
+  .exp-right {
+    white-space: nowrap;
+    font-size: 9pt;
+    color: var(--stone);
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+  }
+  .exp-right .duration {
+    display: inline-block;
+    margin-left: 1mm;
+    background: var(--brand-tint);
+    color: var(--brand);
+    font-size: 8.5pt;
+    font-weight: 500;
+    padding: 0.1mm 1.4mm;
+    border-radius: 2pt;
+  }
+  .exp-location {
+    font-size: 9pt;
+    color: var(--stone);
+    margin-bottom: 1mm;
+  }
+  .exp-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .exp-bullets li {
+    font-size: 9.4pt;
+    color: var(--near-black);
+    line-height: 1.5;
+    padding-left: 5mm;
+    position: relative;
+    margin-bottom: 0.6mm;
+  }
+  .exp-bullets li::before {
+    content: "·";
+    position: absolute;
+    left: 1.5mm;
+    color: var(--brand);
+    font-weight: 700;
+  }
+  .exp-bullets li strong { font-weight: 600; }
+  .exp-bullets li a { color: var(--brand); }
+
+  /* ── PROJECTS ── */
+  .proj-entry { margin-bottom: 2.5mm; break-inside: avoid; }
+  .proj-header {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1mm;
+    margin-bottom: 0.8mm;
+  }
+  .proj-name {
+    font-size: 10pt;
+    font-weight: 600;
+    color: var(--near-black);
+  }
+  .proj-pipe { color: var(--border-soft); margin: 0 0.2em; }
+  .proj-link { font-size: 9pt; color: var(--brand); }
+  .proj-stack {
+    font-size: 9pt;
+    color: var(--olive);
+    font-style: italic;
+  }
+
+  /* ── SKILLS ── */
+  .skills-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .skills-table tr {
+    border-bottom: 0.3pt dotted var(--border);
+  }
+  .skills-table tr:last-child { border-bottom: none; }
+  .skills-table td {
+    padding: 1.4mm 0;
+    font-size: 9.4pt;
+    vertical-align: top;
+    line-height: 1.45;
+  }
+  .skills-table .skill-label {
+    width: 36mm;
+    font-weight: 600;
+    color: var(--brand);
+    letter-spacing: 0.2pt;
+    padding-right: 3mm;
+    white-space: nowrap;
+  }
+  .skills-table .skill-value { color: var(--near-black); }
+  .skills-table .skill-value .em { color: var(--brand); font-weight: 600; }
+
+  /* ── EDUCATION ── */
+  .edu-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1.4mm 0;
+    border-bottom: 0.3pt dotted var(--border);
+    break-inside: avoid;
+  }
+  .edu-entry:last-child { border-bottom: none; }
+  .edu-left {}
+  .edu-degree {
+    font-size: 10pt;
+    font-weight: 600;
+    color: var(--near-black);
+  }
+  .edu-school {
+    font-size: 9.4pt;
+    color: var(--olive);
+    margin-top: 0.3mm;
+  }
+  .edu-date {
+    font-size: 9pt;
+    color: var(--stone);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- ─── HEADER ─── -->
+<div class="header">
+  <div class="header-name">Prathamesh Mali</div>
+  <div class="header-sub">
+    <strong>Senior Frontend Engineer</strong> (5+ Years)&ensp;·&ensp;Mumbai, India
+  </div>
+  <div class="header-links">
+    <a href="https://pratham82.in">&#127760; portfolio</a>
+    <span class="sep">|</span>
+    <a href="https://github.com/pratham82">&#x1F4BB; pratham82</a>
+    <span class="sep">|</span>
+    <a href="https://linkedin.com/in/prathameshmali">&#128100; prathameshmali</a>
+    <span class="sep">|</span>
+    <a href="mailto:mali.prathamesh82@gmail.com">&#9993; mali.prathamesh82@gmail.com</a>
+    <span class="sep">|</span>
+    &#128222; +91 9892634021
+  </div>
+</div>
+
+<!-- ─── SUMMARY ─── -->
+<div class="section">
+  <div class="section-title">Summary</div>
+  <hr class="section-rule">
+  <div class="summary-body">
+    Senior Frontend Engineer with 5+ years of experience building large-scale web and mobile applications using React.js, Next.js, TypeScript, and React Native. Experienced in frontend architecture, design systems, micro-frontend patterns, and cross-functional collaboration. Currently leading checkout modernization at lululemon while leveraging AI-native engineering workflows to drive productivity.
+  </div>
+  <div class="summary-competencies">
+    Frontend Architecture
+    <span class="dot">·</span>
+    AI-Assisted Development
+    <span class="dot">·</span>
+    Micro-frontends
+    <span class="dot">·</span>
+    Design Systems
+    <span class="dot">·</span>
+    Performance Optimization
+    <span class="dot">·</span>
+    React Native
+  </div>
+</div>
+
+<!-- ─── EXPERIENCE ─── -->
+<div class="section">
+  <div class="section-title">Experience</div>
+  <hr class="section-rule">
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <div class="exp-left">
+        <span class="exp-company"><a href="https://www.publicissapient.com/">Publicis Sapient</a></span>
+        <span class="exp-sep">·</span>
+        <span class="exp-role">Senior Frontend Engineer</span>
+      </div>
+      <div class="exp-right">
+        <strong>July 2025 – Present</strong>
+        <span class="duration">Mumbai</span>
+      </div>
+    </div>
+    <ul class="exp-bullets">
+      <li><strong>lululemon:</strong> Lead a frontend pod within lululemon's checkout platform, driving technical discussions, code reviews, and delivery execution while owning the promotions and discounts domain end-to-end.</li>
+      <li>Driving checkout modernization for <a href="https://shop.lululemon.com/">lululemon.com</a>, migrating a legacy JavaScript codebase to Next.js and TypeScript within a micro-frontend architecture (GraphQL, Apollo, Zustand).</li>
+      <li>Leveraged AI-assisted development workflows using GitHub Copilot, Claude Code, and agentic tooling to improve developer productivity and accelerate feature delivery.</li>
+      <li><strong>ADCB Banking:</strong> Contributed to cross-platform digital banking solutions (React Native Expo, XState, Tamagui); built a phonebook onboarding component and a generic approval workflow reused across multiple banking modules.</li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <div class="exp-left">
+        <span class="exp-company"><a href="https://www.blitzelectric.id/">Blitz Electric</a></span>
+        <span class="exp-sep">·</span>
+        <span class="exp-role">Senior Software Engineer (Frontend)</span>
+      </div>
+      <div class="exp-right">
+        <strong>June 2024 – June 2025</strong>
+        <span class="duration">Remote</span>
+      </div>
+    </div>
+    <ul class="exp-bullets">
+      <li><strong>Mobile Seller Platform:</strong> Launched offline sales system with QRIS/cash transactions, geo-tagged returns, and photo verification, driving <strong>30%</strong> higher daily sales and <strong>80%</strong> fewer deposit disputes across <strong>100+</strong> stores.</li>
+      <li><strong>Shipping Fee Engine:</strong> Replaced manual pricing with a real-time calculator (distance, weight, service type), improving order volume by <strong>20%</strong> and streamlining partner onboarding.</li>
+      <li><strong>Design System:</strong> Built a reusable React component library (npm) to standardize UI across multiple teams.</li>
+      <li><strong>Order Tracking:</strong> Built a partner-facing tracking system (Google Maps API) for Blibli and Lazada, reducing support queries.</li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <div class="exp-left">
+        <span class="exp-company"><a href="https://www.mosaicwellness.in/">Mosaic Wellness</a></span>
+        <span class="exp-sep">·</span>
+        <span class="exp-role">SDE 1</span>
+      </div>
+      <div class="exp-right">
+        <strong>June 2022 – April 2024</strong>
+        <span class="duration">Mumbai</span>
+      </div>
+    </div>
+    <ul class="exp-bullets">
+      <li>Led development and migration of a consultation booking experience from WebView to React Native, resulting in a <strong>40% increase</strong> in appointment bookings and a <strong>10% reduction</strong> in funnel drop-offs.</li>
+      <li>Built doctor consultation and appointment scheduling systems including an Instant Appointment System (Web) and a chat-based booking flow in the mobile app (React Native).</li>
+      <li>Revamped the Track Order page with real-time in-page communications, contributing to a <strong>5% decrease</strong> in customer support queries.</li>
+      <li><strong>Products:</strong> <a href="https://manmatters.com/">manmatters.com</a>, <a href="https://bebodywise.com/">bebodywise.com</a>, <a href="https://ourlittlejoys.com/">ourlittlejoys.com</a></li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <div class="exp-left">
+        <span class="exp-company"><a href="https://www.edstem.com/">Edstem Technologies</a></span>
+        <span class="exp-sep">·</span>
+        <span class="exp-role">Software Developer</span>
+      </div>
+      <div class="exp-right">
+        <strong>July 2021 – April 2022</strong>
+        <span class="duration">Remote</span>
+      </div>
+    </div>
+    <ul class="exp-bullets">
+      <li>Built student-facing quiz module and admin dashboard for Lead IAS (Angular Ionic); created a React compliance dashboard for Woodside with Jest unit tests.</li>
+    </ul>
+  </div>
+
+  <div class="exp-entry">
+    <div class="exp-header">
+      <div class="exp-left">
+        <span class="exp-company"><a href="https://www.edulab.in/">Edulab</a></span>
+        <span class="exp-sep">·</span>
+        <span class="exp-role">Software Engineer</span>
+      </div>
+      <div class="exp-right">
+        <strong>February 2021 – June 2021</strong>
+        <span class="duration">Mumbai</span>
+      </div>
+    </div>
+    <ul class="exp-bullets">
+      <li>Built end-to-end LMS features for SDBMI students (MEAN stack) and a Node.js certificate generation tool with pdfmake.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ─── PROJECTS ─── -->
+<div class="section">
+  <div class="section-title">Projects</div>
+  <hr class="section-rule">
+
+  <div class="proj-entry">
+    <div class="proj-header">
+      <span class="proj-name">Portfolio</span>
+      <span class="proj-pipe">|</span>
+      <a class="proj-link" href="https://pratham82.vercel.app/home">Website</a>
+      <span class="proj-pipe">|</span>
+      <a class="proj-link" href="https://github.com/Pratham82/portfolio-v5">Code</a>
+      <span class="proj-pipe">|</span>
+      <span class="proj-stack">Next.js, TypeScript, Tailwind, GraphQL, Sanity.io, MDX</span>
+    </div>
+    <ul class="exp-bullets">
+      <li>Built a personal portfolio and CMS-driven blogging platform using Next.js, GraphQL, Sanity.io and MDX, supporting content publishing, project showcasing, SEO optimization and dynamic content management.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ─── TECHNICAL SKILLS ─── -->
+<div class="section">
+  <div class="section-title">Technical Skills</div>
+  <hr class="section-rule">
+  <table class="skills-table">
+    <tr>
+      <td class="skill-label">Frontend</td>
+      <td class="skill-value"><span class="em">Next.js, React.js, TypeScript, React Native</span>, Redux, Zustand, Tailwind CSS, Storybook</td>
+    </tr>
+    <tr>
+      <td class="skill-label">Backend &amp; APIs</td>
+      <td class="skill-value"><span class="em">GraphQL, Apollo Client/Server</span>, Node.js, Express.js, REST APIs</td>
+    </tr>
+    <tr>
+      <td class="skill-label">Testing</td>
+      <td class="skill-value">Jest, React Testing Library</td>
+    </tr>
+    <tr>
+      <td class="skill-label">DevOps &amp; Tools</td>
+      <td class="skill-value">Docker, GitHub Actions, Jenkins, Vercel, Git, Jira</td>
+    </tr>
+    <tr>
+      <td class="skill-label">AI Tools</td>
+      <td class="skill-value"><span class="em">GitHub Copilot, Claude Code</span>, Cursor, Ollama, MCP Integrations</td>
+    </tr>
+  </table>
+</div>
+
+<!-- ─── EDUCATION ─── -->
+<div class="section">
+  <div class="section-title">Education</div>
+  <hr class="section-rule">
+  <div class="edu-entry">
+    <div class="edu-left">
+      <div class="edu-degree">Master of Computer Science <span style="font-weight:400; color: var(--stone); font-size:9pt;">(Grade: 9.29)</span></div>
+      <div class="edu-school">Mumbai University</div>
+    </div>
+    <div class="edu-date">2019 – 2021</div>
+  </div>
+  <div class="edu-entry">
+    <div class="edu-left">
+      <div class="edu-degree">Bachelor of Computer Science</div>
+      <div class="edu-school">Mumbai University</div>
+    </div>
+    <div class="edu-date">2016 – 2019</div>
+  </div>
+</div>
+
+</body>
+</html>
